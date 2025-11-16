@@ -1,0 +1,47 @@
+@import "tailwindcss";
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* --- Custom polish --- */
+:root{
+  --accent: #0ea5a3; /* teal-ish */
+  --muted: #6b7280;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(180deg,#f8fafc, #ffffff);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Simple container helper */
+.container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* small card */
+.card {
+  @apply bg-white shadow-sm rounded-lg p-5;
+}
+
+/* subtle link */
+.link-muted {
+  color: var(--muted);
+}
+.input {
+  @apply w-full border rounded p-2 bg-gray-50 outline-none;
+}
+
+.btn {
+  @apply bg-teal-600 text-white py-2 px-4 rounded hover:bg-teal-700;
+}
+
+.card {
+  @apply bg-white border rounded-xl shadow-sm;
+}
